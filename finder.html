@@ -1,1 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cleat Finder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+    <nav class="navbar">
+        <div class="logo">The Cleat Lab</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="finder.html">Cleat Finder</a></li>
+            <li><a href="cleats.html">All Cleats</a></li>
+            <li><a href="archetypes.html">Archetypes</a></li>
+            <li><a href="guides.html">Guides</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+
+    <!-- FINDER HEADER -->
+    <section class="hero">
+        <h1>Cleat Finder</h1>
+        <p>Answer a few questions and get personalized cleat recommendations based on fit, feel, and play style.</p>
+    </section>
+
+    <!-- FINDER FORM -->
+    <section class="section">
+        <h2>Your Foot Shape</h2>
+        <select id="footShape">
+            <option value="">Select one</option>
+            <option value="narrow">Narrow</option>
+            <option value="regular">Regular</option>
+            <option value="wide">Wide</option>
+        </select>
+    </section>
+
+    <section class="section">
+        <h2>Fit Preference</h2>
+        <select id="fitPreference">
+            <option value="">Select one</option>
+            <option value="tight">Tight / Snug</option>
+            <option value="regular">Regular</option>
+            <option value="roomy">Roomy / Comfortable</option>
+        </select>
+    </section>
+
+    <section class="section">
+        <h2>Play Style</h2>
+        <select id="playStyle">
+            <option value="">Select one</option>
+            <option value="explosive">Explosive / Fast</option>
+            <option value="technical">Technical / Control</option>
+            <option value="creative">Creative / Dribbler</option>
+            <option value="power">Power / Strength</option>
+            <option value="balanced">Balanced / All‑round</option>
+        </select>
+    </section>
+
+    <section class="section">
+        <h2>Budget</h2>
+        <select id="budget">
+            <option value="">Select one</option>
+            <option value="low">Low ($50–$100)</option>
+            <option value="mid">Mid ($100–$180)</option>
+            <option value="high">High ($180–$300)</option>
+        </select>
+    </section>
+
+    <section class="section">
+        <button class="section-button" onclick="runCleatFinder()">Get Recommendations</button>
+    </section>
+
+    <!-- RESULTS -->
+    <section class="section" id="resultsBox">
+        <h2>Your Recommendations</h2>
+        <p id="resultsText">Fill out the form and click the button to see your cleats.</p>
+    </section>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
 
